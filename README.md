@@ -52,11 +52,8 @@ $ npm run dev
 
 ![OTS](https://gw.alicdn.com/tfs/TB18n63JxD1gK0jSZFsXXbldVXa-2374-804.png)
 
-### 构建
-```shell
-# 发布前需要构建前端代码
-$ npm run build
-```
+### 部署
+点击左侧菜单栏第一个Tab，进行发布
 
 ## About Midway FaaS
 

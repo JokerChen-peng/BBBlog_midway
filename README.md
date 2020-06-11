@@ -36,6 +36,8 @@ $ npm run dev
 
 默认为读取环境变量，亦可手动在 `config/config.default.ts` 文件内进行修改
 
+** 云开发平台暂时提供一个临时测试的AK信息供大家体验，要开发自己的应用，请换成自己的阿里云AK信息 **
+
 | 环境变量名 | 释义 |
 | --- | --- |
 | MIDWAY_OTS_ACCESSKEY | 阿里云账户 AccessKey ID |

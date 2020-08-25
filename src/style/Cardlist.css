@@ -1,0 +1,39 @@
+/* .demo-infinite-container {
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    overflow: auto;
+    padding: 8px 24px;
+    height: 300px;
+  }
+  .demo-loading-container {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+  } */
+  .list {
+  padding: 10px;
+}
+  .content
+{
+text-overflow:ellipsis;
+}
+.author{
+  position:relative;
+  left:10px;
+}
+.row { 
+  border-bottom: 1px solid #ebeced;
+  text-align: left;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+/* .image {
+  margin-right: 10px;
+} */
+
+.content {
+  padding: 10px;
+}

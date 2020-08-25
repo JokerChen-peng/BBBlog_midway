@@ -10,27 +10,42 @@ functions:
     events:
       - apigw:
           path: /*
+ 
   list:
-    handler: todo.list
+    handler: blog.list
     events:
       - apigw:
-          path: /api/list
+          path: /api/blog/list
   update:
-    handler: todo.update
+    handler: blog.update
     events:
       - apigw:
-          path: /api/update
-  remove:
-    handler: todo.remove
+          path: /api/blog/update
+  del:
+    handler: blog.del
     events:
       - apigw:
-          path: /api/remove
-  add:
-    handler: todo.add
+          path: /api/blog/del
+  new:
+    handler: blog.new
     events:
       - apigw:
-          path: /api/add
-
+          path: /api/blog/new
+  detail:
+    handler: blog.detail
+    events:
+      - apigw:
+          path: /api/blog/detail
+  login:
+    handler: user.login
+    events:
+      - apigw:
+          path: /api/user/login
+  register:
+    handler: user.register
+    events:
+      - apigw:
+          path: /api/user/register
 package:
   include:
     - build

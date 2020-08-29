@@ -5,6 +5,8 @@
   "dependencies": {
     "@midwayjs/faas": "^0.3.0",
     "@midwayjs/faas-middleware-static-file": "^0.0.4",
+    "echarts": "^4.9.0",
+    "echarts-for-react": "^2.0.16",
     "koa-session": "^6.0.0",
     "otswhere": "^0.0.4",
     "tablestore": "^5.0.7",

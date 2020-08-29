@@ -64,10 +64,10 @@ export default function SiderDemo() {
               <Link to="/">首页</Link>
             </Menu.Item>
             <Menu.Item key="2" icon={<FileTextOutlined />}>
-              <Link to="/advise">须知</Link>
+              <Link to="/advise">排行榜</Link>
             </Menu.Item>
             <Menu.Item key="3" icon={ <CoffeeOutlined /> }>
-              <Link to="/tea"> 捐赠 </Link>
+              <Link to="/tea"> 须知 </Link>
             </Menu.Item>
           </Menu>
         </Sider>

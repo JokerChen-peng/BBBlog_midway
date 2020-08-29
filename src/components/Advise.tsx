@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
-import { Alert } from 'antd'
-export default  function Advise(){
+import React, { useState,useRef,useEffect } from 'react'
+import Bar from '../echarts/bar'
+
+
+export default  function Advise(){ 
     return(
-        <div> <Alert
-      message="请注意"
-      description="不要发不良的信息呦!"
-      type="info"
-      showIcon
-    /></div>
+        <div> 
+         
+          <Bar/>
+          
+    
+    
+    </div>
     )}

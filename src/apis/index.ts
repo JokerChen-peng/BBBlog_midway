@@ -129,27 +129,27 @@ export class TodoService {
   }
   @Func('user.login')
   async  login() {
-    
+
     const { username, password } = this.ctx.request.body;
-   
+
     const params = {
       tableName: 'user',
       primaryKey: [{ username }, { password }],
       direction: TableStore.Direction.BACKWARD
     };
-          
-         
-           return new Promise(resolve => {
+
+
+    return new Promise(resolve => {
       this.tb.getRow(params, async (_, data) => {
-           
+
         await format.row(data.row)
-       const  row = format.row(data.row)
+        const row = format.row(data.row)
         if (row) {
-          
+
           resolve({
-            author:row.username,
+            author: row.username,
             success: true
- 
+
           });
         } else {
           resolve({ success: false });

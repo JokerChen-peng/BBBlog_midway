@@ -1,8 +1,6 @@
 import React from 'react'
-
 import axios from 'axios'
 import { List, message, Avatar, Spin, Button } from 'antd';
-
 import InfiniteScroll from 'react-infinite-scroller';
 import { Link } from 'react-router-dom';
 
@@ -31,7 +29,7 @@ export class InfiniteListExample extends React.Component {
   return (
     <div key={item.id} className="row">
       <div className="image">
-        {/* <img src={item.image} alt="" /> */}
+       
       </div>
       <div className="content">
         <div>{item.title}</div>
@@ -76,34 +74,6 @@ export class InfiniteListExample extends React.Component {
           hasMore={!this.state.loading && this.state.hasMore}
           useWindow={false}
         >
-          {/* <List
-            dataSource={this.state.data}
-            renderItem={
-              item => 
-                
-                
-                 (<List.Item key={item.id?item.id:null}>
-                    <List.Item.Meta
-                      // avatar={<Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />}
-                      title={item.title}
-                      description={item.content}
-                    />
-                  <div style={{ 
-                      marginRight: 50
-                    }}>by  {item.author}</div>
-                 <Button type="dashed"><Link to={`/detail?${item.id}`}>点击查看详情</Link></Button> </List.Item>)
-              
-
-                
-                
-             }
-          >
-            {this.state.loading && this.state.hasMore && (
-              <div className="demo-loading-container">
-                <Spin />
-              </div>
-            )}
-          </List> */}
           <div className="list">
         {this.state.data.map(this.renderRow.bind(this))}
       </div>

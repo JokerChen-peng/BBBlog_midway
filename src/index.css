@@ -1,7 +1,6 @@
 @import '~antd/dist/antd.css';
 @import './style/Cardlist.css';
 @import './style/menu.css';
-@import './style/Detail.css';
 html,body {
   background-color: #f1f8fd;
   height: 100%;

@@ -58,7 +58,7 @@ export default function SiderDemo() {
       <Layout >
     
         <Sider className='sider' collapsible trigger={null} breakpoint='lg' onBreakpoint={toggle} >
-          {/* <div className="logo" /> */}
+        
           <Menu className='menu'  mode="inline" defaultSelectedKeys={['1']}>
             <Menu.Item key="1" icon={<HomeOutlined />}>
               <Link to="/">首页</Link>
@@ -99,9 +99,9 @@ export default function SiderDemo() {
             }}
           >
           
-            {/* <MyContext.Provider value={bloglist}> */}
+           
               <Route path='/' exact render={() =><InfiniteListExample/>}></Route>
-              {/* </MyContext.Provider> */}
+          
             <Route path='/advise' exact render={() => <Advise />}></Route>
             <Route path='/tea' exact render={() => <Tea />}></Route>
             <Route path='/login' exact render={() =>  <Login/>}></Route>

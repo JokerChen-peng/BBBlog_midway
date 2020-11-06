@@ -5,7 +5,7 @@ export default  function New(){
     const { TextArea } = Input;
     const [title,SetTitle]=useState('')
     const [content,SetContent]=useState('')
-    //  const [author,SetAuthor]=useState('')
+    
     const author = localStorage.getItem('author')
     const HandleUpdate=()=>{
         axios(`/api/blog/new?title=${title}&content=${content}&author=${author}`).then(res=>

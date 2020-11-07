@@ -14,46 +14,64 @@
 
 之后在谷歌浏览器中输入https://workbench.aliyun.com/ 点击免费云开发，创建一个新应用。
 
-![Snipaste_2020-11-04_18-25-47](C:\Users\陈坤鹏·\Desktop\掘金文章图片\serverless云开发之旅\Snipaste_2020-11-04_18-25-47.png)
+![Snipaste_2020-11-04_18-25-47.png](https://i.loli.net/2020/11/07/gft68M9hrXwUYqm.png)
 
 
-![Snipaste_2020-11-04_18-27-40](C:\Users\陈坤鹏·\Desktop\掘金文章图片\serverless云开发之旅\Snipaste_2020-11-04_18-27-40.png)
+![Snipaste_2020-11-04_18-27-40.png](https://i.loli.net/2020/11/07/xmIjvhWYb3K1yR7.png)
 
 有很多应用场景，根据自己的需求选择即可。我们这里选择实验室，选择midway serverless ots数据库示例。（因为ots数据库基本免费）
 
-![Snipaste_2020-11-04_18-32-00](C:\Users\陈坤鹏·\Desktop\掘金文章图片\serverless云开发之旅\Snipaste_2020-11-04_18-32-00.png)
+![Snipaste_2020-11-04_18-32-00.png](https://i.loli.net/2020/11/07/QgiqOjF5bX2kfa9.png)
 
 在过程中可能需要购买一些服务，购买即可，都是免费。
 
 输入应用名称和应用介绍，点击完成。
 
-![Snipaste_2020-11-04_18-44-27](C:\Users\陈坤鹏·\Desktop\掘金文章图片\serverless云开发之旅\Snipaste_2020-11-04_18-44-27.png)
+![Snipaste_2020-11-04_18-44-27.png](https://i.loli.net/2020/11/07/tIWedsocQpfHnGg.png)
 
 稍等一会，项目就创建成啦。
 
-![Snipaste_2020-11-04_18-52-40](C:\Users\陈坤鹏·\Desktop\掘金文章图片\serverless云开发之旅\Snipaste_2020-11-04_18-52-40.png)
+![Snipaste_2020-11-04_18-52-40.png](https://i.loli.net/2020/11/07/iMTemfnNF9kSOgv.png)
 
-创建完成以后点击应用配置，在浏览器输入https://www.aliyun.com/product/ots，点击管理控制台，点击创建实例，输入名称，点击确定。点击创建好的实例，把实例名称和公网分别复制到实例名和endPoint上，点击自己的头像，查看自己的accesskey与secret，并复制自己的accesskey与secret。
+创建完成以后点击应用配置，在浏览器输入https://www.aliyun.com/product/ots，点击管理控制台，点击创建实例，输入名称，点击确定。
+
+点击创建好的实例，把实例名称和公网分别复制到**应用配置**中的实例名和endPoint上，点击自己的头像，查看自己的accesskey与secret，并复制自己的accesskey与secret。
+
+![Snipaste_2020-11-04_19-48-06.png](https://i.loli.net/2020/11/07/oLhCQRjYi9Gxrn7.png)
+
+![Snipaste_2020-11-04_19-51-06.png](https://i.loli.net/2020/11/07/q6xlUYtBLAdTHmP.png)
+
+![Snipaste_2020-11-04_20-56-22.png](https://i.loli.net/2020/11/07/mtBSR6E37jcIZhl.png)
+
+![Snipaste_2020-11-04_20-51-03.png](https://i.loli.net/2020/11/07/k5vedjat7qF4PND.png)
+
+![Snipaste_2020-11-04_19-09-40.png](https://i.loli.net/2020/11/07/lJhHj6YvritMB57.png)
+
+
 
 点击创建数据表，创建两个表blog和user。设置blog的主键为id，user的主键为username和password。
 
-之后点击创建数据表![Snipaste_2020-11-04_19-09-40](C:\Users\陈坤鹏·\Desktop\掘金文章图片\serverless云开发之旅\Snipaste_2020-11-04_19-09-40.png)
+之后点击创建数据表，创建完成后返回项目页面
 
-![Snipaste_2020-11-04_19-48-06](C:\Users\陈坤鹏·\Desktop\掘金文章图片\serverless云开发之旅\Snipaste_2020-11-04_19-48-06.png)
+![Snipaste_2020-11-04_19-55-05.png](https://i.loli.net/2020/11/07/N6LI2vi59We1dUD.png)
 
-![Snipaste_2020-11-04_19-51-06](C:\Users\陈坤鹏·\Desktop\掘金文章图片\serverless云开发之旅\Snipaste_2020-11-04_19-51-06.png)
-
-![Snipaste_2020-11-04_19-55-05](C:\Users\陈坤鹏·\Desktop\掘金文章图片\serverless云开发之旅\Snipaste_2020-11-04_19-55-05.png)
+![Snipaste_2020-11-04_20-59-47.png](https://i.loli.net/2020/11/07/dmaSDtxzYZ31IcN.png)
 
 
 
-![Snipaste_2020-11-04_20-56-22](C:\Users\陈坤鹏·\Desktop\掘金文章图片\serverless云开发之旅\Snipaste_2020-11-04_20-56-22.png)
 
-![Snipaste_2020-11-04_20-51-03](C:\Users\陈坤鹏·\Desktop\掘金文章图片\serverless云开发之旅\Snipaste_2020-11-04_20-51-03.png)
+
+
+
+
+
+
+
+点击开发部署
 
 ok，熟悉的味道
 
-![Snipaste_2020-11-04_18-59-49](C:\Users\陈坤鹏·\Desktop\掘金文章图片\serverless云开发之旅\Snipaste_2020-11-04_18-59-49.png)
+![Snipaste_2020-11-04_18-59-49.png](https://i.loli.net/2020/11/07/AUqmCSW8Br6NJT9.png)
 
 安装依赖
 
@@ -1488,7 +1506,7 @@ npm run dev
 
 点左侧第一个部署按钮，首先选择日常环境，点击与文件同步，自动拉取f.yml的配置，如果不行，手动配置一下~，之后点击部署。
 
-![Snipaste_2020-11-05_21-59-03](C:\Users\陈坤鹏·\Desktop\掘金文章图片\serverless云开发之旅\Snipaste_2020-11-05_21-59-03.png)
+![Snipaste_2020-11-05_21-59-03.png](https://i.loli.net/2020/11/07/9eqAHFlIRfCK4Vp.png)
 
 之后预发环境与线上环境与之一样，按顺序即可。部署成功后，会给出一个免费的临时测试域名用于访问部署到线上的效果。
 
@@ -1502,7 +1520,7 @@ serverless 大大降低了开发的成本和上线周期。
 
 而且免运维 (服务器运维、容量管理、弹性伸缩等)，按资源的使用量付费使得上线后的成本极低
 
-
+上线地址 http://bk.ckpbk.top/
 
 项目github地址   https://github.com/JokerChen-peng/BBBlog_midway
 

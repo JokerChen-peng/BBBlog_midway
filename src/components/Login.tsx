@@ -1,41 +1,29 @@
-import React, {useState}from 'react';
-import { Form, Input, Button} from 'antd';
-import axios from 'axios'
-
+import React, { useState } from "react";
+import { Form, Input, Button } from "antd";
+import { userLogin} from "../utils/request"
 
 const Login = () => {
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
- 
-   const handleLogin = () =>{
-    axios.post(`/api/user/login`,{
-     username,password
-    }).then(resp => {
-       
-    if (resp.data.success) {
-      console.log(resp.data)
-           localStorage.setItem('author',resp.data.author)       
-          alert(`登录成功`)
-       }
-       
-       else {
-        alert(`登录失败`)
-       }
-     })}
-   
-
-  
-
-
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const handleLogin = () => {
+    userLogin(username,password)
+      .then((resp) => {
+        if (resp.success) {
+          localStorage.setItem("author", resp.data.author);
+          alert(`登录成功`);
+        } else {
+          alert(`登录失败`);
+        }
+      });
+  };
 
   return (
     <Form
-     
       name="basic"
       initialValues={{
         remember: true,
       }}
-      layout='inline'
+      layout="inline"
     >
       <Form.Item
         label="用户名"
@@ -43,14 +31,15 @@ const Login = () => {
         rules={[
           {
             required: true,
-            message: '请输入你的用户名',
+            message: "请输入你的用户名",
           },
         ]}
       >
-        <Input  onChange={e => {
-                  
-                  setUsername(e.target.value)
-                }}/>
+        <Input
+          onChange={(e) => {
+            setUsername(e.target.value);
+          }}
+        />
       </Form.Item>
 
       <Form.Item
@@ -59,26 +48,24 @@ const Login = () => {
         rules={[
           {
             required: true,
-            message: '请输入你的密码',
+            message: "请输入你的密码",
           },
         ]}
       >
-        <Input.Password onChange={e => {
-                  
-                  setPassword(e.target.value)
-                }}/>
+        <Input.Password
+          onChange={(e) => {
+            setPassword(e.target.value);
+          }}
+        />
       </Form.Item>
 
-
-      <Form.Item >
-        <Button type="primary" htmlType="submit"onClick={handleLogin}>
+      <Form.Item>
+        <Button type="primary" htmlType="submit" onClick={handleLogin}>
           登入
         </Button>
       </Form.Item>
     </Form>
   );
 };
-
-
 
 export default Login;

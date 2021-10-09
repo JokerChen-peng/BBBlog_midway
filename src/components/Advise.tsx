@@ -1,14 +1,10 @@
-import React, { useState,useRef,useEffect } from 'react'
-import Bar from '../echarts/bar'
+import React, { useState, useRef, useEffect } from "react";
+import Bar from "../echarts/bar";
 
-
-export default  function Advise(){ 
-    return(
-        <div> 
-         
-          <Bar/>
-          
-    
-    
+export default function Advise() {
+  return (
+    <div>
+      <Bar />
     </div>
-    )}
+  );
+}
